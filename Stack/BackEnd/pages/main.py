@@ -75,7 +75,7 @@ def show():
         st.session_state.answered_questions = set()
 
     # Page configuration
-    st.title("QuantumEd")
+    st.title("Quantum AiEd")
     st.write("Test your knowledge and learn more about quantum computing!")
 
 

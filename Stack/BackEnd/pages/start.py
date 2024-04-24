@@ -9,7 +9,7 @@ def show():
 
     with col2:
         # Add a welcoming header
-        st.title("Welcome to the QuantumAI!")
+        st.title("Welcome to the Quantum AiEd!")
 
         # Introduction text styled with a modern look
         st.markdown("""
