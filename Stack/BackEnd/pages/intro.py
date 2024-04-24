@@ -1,8 +1,8 @@
 import streamlit as st
 
 def show():
-    st.title("Welcome to the Application")
-    st.write("This is the introduction page where users read some information.")
+    st.title("Quantum Computing Fundamentals")
+    st.write("The following is information on the first chapter Quatum Computing: An Applied Approach by Jack D. Hidary ")
 
     # Expanded content for quantum computing introduction
     st.header("Chapter 1: Superposition, Entanglement, and Reversibility")
