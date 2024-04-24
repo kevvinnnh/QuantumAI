@@ -77,6 +77,7 @@ def show():
     # Page configuration
     st.title("Quantum AiEd")
     st.write("Test your knowledge and learn more about quantum computing!")
+    st.markdown("<br><b>", unsafe_allow_html=True)
 
 
         
@@ -164,7 +165,8 @@ def show():
         if st.button("Next Question", key='next_question'):
             next_question()
             st.experimental_rerun()
-                
+        st.markdown("<br>", unsafe_allow_html=True)
+
    # Temporary variables for state changes
     should_start_chat = False
     should_move_to_next_question = False
@@ -176,12 +178,12 @@ def show():
     question_number = st.session_state.current_question_index + 1
     question = current_question["question"]
 
-    st.write(f"Question {question_number}: {question}")  # Display question with number
+    st.markdown(f"<h3>Question {question_number}: {question}</h3>", unsafe_allow_html=True)
     options = current_question["options"]
     if current_question_index not in st.session_state.answered_questions:
         answer = st.radio("Choose your answer:", options)
 
-    # Check the answer and decide whether to start a chat session
+  
     # Check the answer and decide whether to start a chat session
     if st.button("Submit"):
         correct = answer == current_question["answer"]
