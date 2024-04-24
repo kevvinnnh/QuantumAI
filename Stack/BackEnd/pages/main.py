@@ -155,7 +155,7 @@ def show():
         st.session_state.thread_id = None  # Resetting the thread_id if needed
 
     # Display buttons for navigation
-    col1, col2 = st.columns(2)
+    col1, col2 = st.columns([3, 1])  # Change the column width ratios
     with col1:
         if st.button("Previous Question", key='prev_question'):
             previous_question()
